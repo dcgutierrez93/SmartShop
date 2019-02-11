@@ -5,4 +5,7 @@ module.exports = function(app) {
     app.get('/', (req, res) => {
         res.sendFile(path.join(__dirname, "../app/store.html"));
     })
+    app.get('/cart', (req, res) => {
+        res.sendFile(path.join(__dirname, "../app/cart.html"));
+    })
 }
